@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+	  <PackageId>CPermissions</PackageId>
+	  <PackageVersion>1.0.0</PackageVersion>
+	  <Authors>niaher</Authors>
+	  <Description>Common constructs for permission management.</Description>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <Copyright>Copyright 2017 (c) niaher. All rights reserved.</Copyright>
+	  <PackageTags>permissions security domaindrivendesign</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.4\CPermissions.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
