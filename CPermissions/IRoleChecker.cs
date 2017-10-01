@@ -2,6 +2,11 @@ namespace CPermissions
 {
 	using System.Collections.Generic;
 
+	/// <summary>
+	/// Represents a class which can retrieve user's roles.
+	/// </summary>
+	/// <typeparam name="TUser"></typeparam>
+	/// <typeparam name="TRole"></typeparam>
 	public interface IRoleChecker<in TUser, out TRole>
 	{
 		/// <summary>

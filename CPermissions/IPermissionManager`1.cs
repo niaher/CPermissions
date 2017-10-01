@@ -2,6 +2,13 @@
 {
 	using System.Collections.Generic;
 
+	/// <summary>
+	/// Represents an object which is able to check whether a specific user
+	/// is able to perform specific action on a specic context.
+	/// </summary>
+	/// <typeparam name="TUserAction"></typeparam>
+	/// <typeparam name="TUser"></typeparam>
+	/// <typeparam name="TContext"></typeparam>
 	public interface IPermissionManager<TUserAction, in TUser, in TContext>
 	{
 		/// <summary>

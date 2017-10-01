@@ -2,19 +2,22 @@
 {
 	using System;
 
-	public class UserAction<TContext>
+	/// <summary>
+	/// Represents an action which can be performed by a user on a specific
+	/// type of object.
+	/// </summary>
+	/// <typeparam name="TContext">Type of object on which this action can be performed.</typeparam>
+	public class UserAction<TContext> : UserAction
 	{
-		public UserAction(string name)
+		/// <inheritdoc />
+		public UserAction(string name) : base(name)
 		{
-			this.Name = name;
 			this.ContextType = typeof(TContext);
 		}
-
-		public string Name { get; protected set; }
 
 		/// <summary>
 		/// Gets or sets the type for which the permission can be defined.
 		/// </summary>
-		public Type ContextType { get; private set; }
+		public Type ContextType { get; }
 	}
 }

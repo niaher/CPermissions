@@ -2,6 +2,12 @@ namespace CPermissions
 {
 	using System.Collections.Generic;
 
+	/// <summary>
+	/// Represents an object which is able to check whether a specific user
+	/// is able to perform specific actions.
+	/// </summary>
+	/// <typeparam name="TUserAction"></typeparam>
+	/// <typeparam name="TUser"></typeparam>
 	public interface IPermissionManager<TUserAction, in TUser>
 	{
 		/// <summary>
